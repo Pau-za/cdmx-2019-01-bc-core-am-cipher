@@ -37,11 +37,28 @@ document.getElementById('backIntro').addEventListener('click', clickBack);
         divDesp.style.display = 'none';
         divIntro.style.display = 'block';
     };
+
     
 //Input que recibe el número de desplazamiento
-let offset = document.getElementById('offsetNumb').value;
-console.log(offset);
+function getOffset () {
+    let offset = document.getElementById('offsetNumb').value;
+    console.log(offset);
+};
 
-//Evento para cambiar de página a que usuaria elija entre codificar y decodificar mensaje
+//Eventos para insertar codificar
+const divCode = document.getElementById('codeStr');
+
+document.getElementById('code').addEventListener('click', showCode);
+    function showCode () {
+        divCode.style.display = 'block';
+    };
+
+//Evento para insertar decodificar
+const divDecode = document.getElementById('decodeStr');
+
+document.getElementById('decode').addEventListener('click', showDecode);
+    function showDecode () {
+        divDecode.style.display = 'block';
+    };
 
 

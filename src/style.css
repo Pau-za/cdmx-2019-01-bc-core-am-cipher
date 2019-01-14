@@ -13,7 +13,7 @@ h1, #OLSW {
     font-family: 'Coiny', sans-serif;
 }
 
-#cifCes, #offset {
+#cifCes, #offset, #codeStr, #decodeStr {
     display: none;
 }
 
