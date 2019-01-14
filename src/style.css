@@ -13,3 +13,22 @@ h1, #OLSW {
     font-family: 'Coiny', sans-serif;
 }
 
+#cifCes {
+    display: none;
+}
+
+.boton {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color:  #F3D2ED;
+    background-color: #4E2246;
+    border-radius: 10px;  
+    border-color: #4E2246;
+}
+
+.boton:hover {
+    color: #0C0221;
+    background-color: #E6DEF7;
+    border-color: #E6DEF7;
+}

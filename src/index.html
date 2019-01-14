@@ -8,22 +8,13 @@
   </head>
   <body>
     <div id="root">
+      <div id="intro">
       <h1>Bienvenida a OLSW</h1>
-      <P>Antes que cualquier cosa, te explicaremos qué es <strong id="OLSW">OLSW</strong>, y de dónde viene su nombre.</P>
-      <h2>Cifrado César</h2>
-      <p>El <strong>Cifrado César</strong>, también conocido como cifrado por <strong>desplazamiento</strong>, 
-        es un método de cifrado que utilizaba el Emperador Romano Julio César. Este método consiste en reemplazar
-         una letra del mensaje original por otra letra, que se encuentra un número determinado de posiciones más
-         adelante en el abecedario.
-      </p>
-      <p>Por ejemplo, Si tenemos las letras ABCDE, y determinamos que el número de lugares que se 
-         desplazará nuestro mensaje es 4, entonces la A será sustituída por la letra E, y así se 
-         recorrerán todas las demás letras del abecedario. Siempre el mismo número de posiciones 
-         que se eligió desde el inicio.
-      </p>
       <h2>¿Qué es, y de dónde sale <em id="OLSW">OLSW</em>?</h2> 
-      <p><strong id="OLSW">OLSW</strong> es una aplicación que cifra o codifica mensajes utilizando el <strong>Cifrado César</strong>.
-       <strong id="OLSW">OLSW</strong> está pensada por mujeres que viven el acoso callejero a diario en la Ciudad de México,
+      <p><strong id="OLSW">OLSW</strong> es una aplicación que cifra o codifica mensajes utilizando el <strong>Cifrado César</strong>.</p>
+      <p>(Si deseas saber más sobre el Cifrado César da click en el siguiente botón:)</p>
+    <button id="botonCesar" class="boton" type="button">Cifrado César</button>
+      <p><strong id="OLSW">OLSW</strong> está pensada por mujeres que viven el acoso callejero a diario en la Ciudad de México,
        que comprenden la necesidad de sentirse a salvo. ¿Alguna vez te has sentido vulnerable? ¿Alguna vez has 
        sentido que tu vida corre riesgo? ¿Has tenido citas o relaciones peligrosas? Si tu respuesta es sí, entonces esta
        aplicación es para ti.</p>
@@ -46,7 +37,23 @@
         es la palabra <strong>HELP</strong> (que significa <em>ayuda</em> en inglés). Y eso es lo que busca esta app, 
         <strong>ayudar a las mujeres que lo necesiten</strong>.
       </p>
-      <button id="boton" type="button" name="button"></button>
+    </div>
+      
+      <div id="cifCes">
+      <h2>Cifrado César</h2>
+      <p>El <strong>Cifrado César</strong>, también conocido como cifrado por <strong>desplazamiento</strong>, 
+        es un método de cifrado que utilizaba el Emperador Romano Julio César. Este método consiste en reemplazar
+         una letra del mensaje original por otra letra, que se encuentra un número determinado de posiciones más
+         adelante en el abecedario.
+      </p>
+      <p>Por ejemplo, Si tenemos las letras ABCDE, y determinamos que el número de lugares que se 
+         desplazará nuestro mensaje es 4, entonces la A será sustituída por la letra E, y así se 
+         recorrerán todas las demás letras del abecedario. Siempre el mismo número de posiciones 
+         que se eligió desde el inicio.
+      </p>
+      <button id="backIntro" class="boton" type="button" name="button">Volver a Introducción</button>
+      </div>
+      
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
