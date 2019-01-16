@@ -10,11 +10,11 @@
     <div id="root">
       <div id="intro">
       <h1>Bienvenida a OLSW</h1>
-      <h2>¿Qué es, y de dónde sale <em id="OLSW">OLSW</em>?</h2> 
-      <p><strong id="OLSW">OLSW</strong> es una aplicación que cifra o codifica mensajes utilizando el <strong>Cifrado César</strong>.</p>
+      <h2>¿Qué es, y de dónde sale <em class="olsw">OLSW</em>?</h2> 
+      <p><strong class="olsw">OLSW</strong> es una aplicación que cifra o codifica mensajes utilizando el <strong>Cifrado César</strong>.</p>
       <p>(Si deseas saber más sobre el Cifrado César da click en el siguiente botón:)</p>
     <button id="botonCesar" class="boton" type="button">Cifrado César</button>
-      <p><strong id="OLSW">OLSW</strong> está pensada por mujeres que viven el acoso callejero a diario en la Ciudad de México,
+      <p><strong class="olsw">OLSW</strong> está pensada por mujeres que viven el acoso callejero a diario en la Ciudad de México,
        que comprenden la necesidad de sentirse a salvo. ¿Alguna vez te has sentido vulnerable? ¿Alguna vez has 
        sentido que tu vida corre riesgo? ¿Has tenido citas o relaciones peligrosas? Si tu respuesta es sí, entonces esta
        aplicación es para ti.</p>
@@ -24,13 +24,13 @@
          comienzas a tener una sensación rara, incómoda, y tu instinto te dice que deberías de salir corriendo. Sin embargo,
          no te atreves a hacerlo porque tu cita ya está asomándose a tu celular cuando lo tomas, y no quieres alertarlo,
           no quieres que se de cuenta de que ya estás percibiendo algo extraño. Tampoco quieres dejar tu trago sin vigilar. 
-          Entonces puedes recurrir a <strong id="OLSW">OLSW</strong> para ponerte en contacto con alguien de tu confianza, y avisarle 
+          Entonces puedes recurrir a <strong class="olsw">OLSW</strong> para ponerte en contacto con alguien de tu confianza, y avisarle 
          que te encuentras en una situación de riesgo. Simplemente abres la aplicación, escribres el número de lugares que 
          deseas que se desplace cada letra (<em>número de desplazamiento</em>), y eliges la opción <em>codificar</em>, en 
          seguida escribes tu mensaje, y ¡listo!, puedes copiar y enviar tu mensaje. 
       </p>
       <p>De igual manera, si recibes un mensaje codificado de una amiga, tu hermana, tu madre, o cualquier mujer de tu vida, 
-         puedes recurrir a <strong id="OLSW">OLSW</strong> para decodificar el mensaje y ponerte en contacto con ella para rescatarla de la situación 
+         puedes recurrir a <strong class="olsw">OLSW</strong> para decodificar el mensaje y ponerte en contacto con ella para rescatarla de la situación 
          de riesgo en la que se encuentre.
       </p>
       <p>Tal vez ya estás imaginándote de dónde viene la palabra <strong id="OLSW">OLSW</strong>. Sí, es una palabra cifrada, de hecho 
@@ -55,15 +55,11 @@
       <button id="backIntro" class="boton" type="button" name="button">Volver a Introducción</button>
       </div>
 
-      <div id="offset">
+      <div id="choose">
         <h1>OLSW</h1>
-        <p>Lo primero que debes hacer para codificar o decodificar tu mensaje es elegir el <strong>número 
-          de desplazamiento</strong>. 
-        </p>
-        <input type="number" id="offsetNumb" >
-        <button id="offsetButton" class="boton" type="button" name="button">Ingresar número</button>
-        <p>Una vez que hayas ingresado tu <strong>número de desplazamiento</strong>, elige si deseas 
-        <strong>codificar</strong> o <strong>decodificar</strong> un mensaje:</p>
+        <p>Lo primero que debes hacer es elegir si deseas <strong>codificar</strong> o <strong>decodificar</strong> 
+          tu mensaje. Una vez que lo hayas hecho, deberás elegir el <strong>número de desplazamiento </strong>. 
+        </p>  
         <button id="code" class="boton" type="button" name="button">Codificar Mensaje</button>
         <button id="decode" class="boton" type="button" name="button">Decodificar Mensaje</button>
 
@@ -73,16 +69,21 @@
       <div id="codeStr">
         <h2>Codificar mensaje</h2>
         <p>A continuación ingresa el mensaje que deseas codificar, posteriormente da click en <strong>Codificar</strong>.</p>
-        <input  id="toEncode" name="mensajeACodificar" type="text"></input>
-        
+        <input class = "inputCode" id="toEncode" name="mensajeACodificar" type="text">
+        <input class = "inputOffset" type="number" id="offsetEncode">
         <button id="toCode" class="boton" type="button" name="button">Codificar</button>
       </div>
 
       <div id="decodeStr">
           <h2>Decodificar mensaje</h2>
           <p>A continuación ingresa el mensaje que deseas decodificar, posteriormente da click en <strong>Decodificar</strong>.</p>
-          <textarea name="textArea" id="toDecode" cols="50" rows="10"></textarea>
+          <textarea name="textArea" class="toDecode" id="decodeText" cols="50" rows="10"></textarea>
+          <input class = "inputOffset" type="number" id="offsetDecode">
           <button id="toDecode" class="boton" type="button" name="button" onclick="cipher.code()">Decodificar</button>
+        </div>
+
+        <div id= "showResult">
+         <p id="result"></p> 
         </div>
 
      

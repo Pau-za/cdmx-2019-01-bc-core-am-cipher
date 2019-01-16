@@ -5,15 +5,15 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #E6DEF7;
-    color: #0C0221;
+    background-color: #D7CeC7;
+    color: #565656;
 }
 
 h1, #OLSW {
     font-family: 'Coiny', sans-serif;
 }
 
-#cifCes, #offset, #codeStr, #decodeStr, #goIntro {
+#cifCes, #choose, #codeStr, #decodeStr, #goIntro {
     display: none;
 }
 
@@ -21,14 +21,18 @@ h1, #OLSW {
     padding: 10px;
     font-weight: 600;
     font-size: 15px;
-    color:  #F3D2ED;
-    background-color: #4E2246;
+    color:  #D7CeC7;
+    background-color: #76323F;
     border-radius: 10px;  
-    border-color: #4E2246;
+    border-color: #76323F;
 }
 
 .boton:hover {
-    color: #0C0221;
-    background-color: #E6DEF7;
-    border-color: #E6DEF7;
+    color: rgb(7, 3, 17);
+    background-color: #C09F80;
+    border-color: #C09F80;
+}
+
+#offsetNumb {
+    width : 50px;
 }
