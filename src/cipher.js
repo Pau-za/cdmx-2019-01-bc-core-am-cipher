@@ -14,10 +14,16 @@ window.cipher = {
     }
     return nuevoCifrado;
   },
-  decode: () => {
+  decode: (offset, userStr) => {
+    let nuevoDescifrado = "";
+    let mayusculaDec = userStr.toUpperCase();
+    for(let i = 0; i < mayusculaDec.length; i++){
+      let mayusAsciiDec = mayusculaDec.charCodeAt(i);
+      let mayusAsciiDecTransform = (mayusAsciiDec + 65 - offset) %26 + 65;
+      let transformedDecString = String.fromCharCode(mayusAsciiDecTransform);
+      nuevoDescifrado += transformedDecString;
+    }
+    return nuevoDescifrado;
   },
 };
 
-/*let asciiOriginal = mayuscula.charCodeAt(); //variable que guarda el código ascii de cada caracter
-    let clearInputNumber = document.getElementsByClassName('inputCode').value=''; //limpia input
-    */
