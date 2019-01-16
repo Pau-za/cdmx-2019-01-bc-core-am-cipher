@@ -1,9 +1,5 @@
 //Aquí voy a crear eventos
-//const boton = document.getElementById('boton');
-
-//boton.addEventListener('click', window.cypher.encode); //llamo a la función del documento cypher.js
-
-//evento del botón para la explicación del Cifrado César
+//Variables globales
 const divIntro = document.getElementById('intro');
 const divExplain = document.getElementById('cifCes');
 const divDesp = document.getElementById('offset');
@@ -12,12 +8,12 @@ const divDecode = document.getElementById('decodeStr');
 
 
 
+//evento del botón para la explicación del Cifrado César
 document.getElementById('botonCesar').addEventListener('click', pulsar);
     function pulsar() {
         divIntro.style.display = 'none';
         divExplain.style.display = 'block';
     };
-
 
 
 //evento de botón "estoy lista para iniciar"
@@ -28,32 +24,23 @@ document.getElementById('start').addEventListener('click', pulsarStart);
     };
 
 //Evento del botón "volver a introducción"
-//No me sale este evento :(
-
-
 document.getElementById('backIntro').addEventListener('click', clickBack);
     function clickBack() {
-        divDesp.style.display = 'none';
+        divExplain.style.display = 'none';
         divIntro.style.display = 'block';
     };
 
     
-//Input que recibe el número de desplazamiento
-
+//Input que recibe el número de desplazamiento al dar click en botón ingresar número
 const getOffset = () => {
-    let offset = document.getElementById('offsetNumb').value;
+    const offset = document.getElementById('offsetNumb').value;
     console.log(Number(offset)); //Si pongo console.log sí limpia el input, y guarda el valor
     let clearInput = document.getElementById('offsetNumb').value=''; //limpia input
-    //limpiar input
+    return offset;
 };
 document.getElementById('offsetButton').addEventListener('click', getOffset);
 
-
-
-
 //Evento para insertar codificar
-
-
 document.getElementById('code').addEventListener('click', showCode);
     function showCode () {
         divCode.style.display = 'block';
@@ -62,28 +49,42 @@ document.getElementById('code').addEventListener('click', showCode);
         }
     };
 
-
-
-
-//Función para codificar mensaje
-const mensaje = document.getElementById('toEncode'); //evento en textarea
-
-document.getElementById('toCode').addEventListener('click', getMsj); //cuando de click en el botón del textarea, se ejecuta la función getMsj
-    function getMsj () {
-        let stringObtenido = mensaje.value; //trae el valor del string que introujo el usuario
-        let mayuscula = stringObtenido.toUpperCase(); //convierte string a mayúsculas
-        let mayus = mayuscula.charCodeAt(); //variable que va a guardar el valor del código ascii
-        for(let i=0; i<mayuscula.length; i++) {
-            let letraAscii = mayuscula.charCodeAt(i); //obtiene el valor del código ascii de cada elemento del string
-            let formulaEncode = (letraAscii + 65 - Number(getOffset)) % 26 + 65; 
-            console.log(formulaEncode); //dice NaN ;(
-        }
+//Agarrar string que introduce usuario
+let nuevoCifrado = ''; //variable que va a recoger el resultado de la transformación
+const getString = () => {
+    const userStr = document.getElementById('toEncode').value; //Hasta aquí sí agarra el string
+    let mayuscula = userStr.toUpperCase(); //Sí da el string en mayúsculas
+    let asciiOriginal = mayuscula.charCodeAt(); //variable que guarda el código ascii de cada caracter
+    for (let i = 0; i < mayuscula.length; i++){
+        let mayusAsciiOriginal = mayuscula.charCodeAt(i); //Sí da el arreglo del código ascii de cara caracter
+        let mayusAsciiTransform = (mayusAsciiOriginal + 65 - 9) %26 + 65; //si no meto el offset, todo bien
+        let transformedString = String.fromCharCode(mayusAsciiTransform);
+        nuevoCifrado += transformedString; //listo!
     }
+    console.log(nuevoCifrado);
+}
+//NO RESPETA ESPACIOS, ¿CÓMO LE HAGO PARA INVOCAR LA FUNCIÓN'??? :'(
+
+
+
+//Invocando función
+document.getElementById('toCode').addEventListener('click', getString);
+
+
+/*
+console.log(codify.addEventListener('click', getMsj(getOffset, mensaje)));
+codify.addEventListener('click', () =>{
+    // Capturas el input
+    // Invocas getMsj(input1, input2)
+    // let cifrado = getMsj(input1,input2)
+//});
+*/
+
+
 
 
 
 //Evento para insertar decodificar
-
 
 document.getElementById('decode').addEventListener('click', showDecode);
     function showDecode () {
