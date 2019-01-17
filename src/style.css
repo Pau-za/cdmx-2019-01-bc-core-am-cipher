@@ -9,11 +9,16 @@ body {
     color: #565656;
 }
 
-h1, #OLSW {
-    font-family: 'Coiny', sans-serif;
+h1 {
+    font-size: 250%;
 }
 
-#cifCes, #choose, #codeStr, #decodeStr, #goIntro {
+h1, .olsw {
+    font-family: 'Coiny', sans-serif;
+    font-size: 30px;
+}
+
+#cifCes, #choose, #codeStr, #decodeStr, #goIntro, #result {
     display: none;
 }
 
@@ -33,6 +38,24 @@ h1, #OLSW {
     border-color: #C09F80;
 }
 
-#offsetNumb {
+#offsetEncode, #offsetDecode {
     width : 50px;
+}
+
+.toDecode, .toCode {
+    vertical-align: middle;
+    margin: 10px;
+}
+
+#result {
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border: thin;
+    border-color: #565656;
+    float: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #C09F80;
+    color: #565656;
+    font-size: 
 }

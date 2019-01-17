@@ -5,40 +5,41 @@ const divExplain = document.getElementById('cifCes'); //div explicación del cif
 const divChoose = document.getElementById('choose'); //div para elegir codificar y decodificar
 const divCode = document.getElementById('codeStr'); //div Codificar
 const divDecode = document.getElementById('decodeStr'); //div Decodificar
+//const divClear = document.getElementById('clear'); //div Limpiar formulario
 
 //evento del botón para la explicación del Cifrado César
 document.getElementById('botonCesar').addEventListener('click', () => {
-        divIntro.style.display = 'none';
-        divExplain.style.display = 'block';
-    })
+    divIntro.style.display = 'none';
+    divExplain.style.display = 'block';
+})
 
 //evento de botón "estoy lista para iniciar"
 document.getElementById('start').addEventListener('click', () => {
-        divIntro.style.display = 'none';
-        divChoose.style.display = 'block';
-    })
+    divIntro.style.display = 'none';
+    divChoose.style.display = 'block';
+})
 
 //Evento del botón "volver a introducción"
 document.getElementById('backIntro').addEventListener('click', () => {
-        divExplain.style.display = 'none';
-        divIntro.style.display = 'block';
-    })
+    divExplain.style.display = 'none';
+    divIntro.style.display = 'block';
+})
 
 //Evento para codificar
 document.getElementById('code').addEventListener('click', () => {
         divCode.style.display = 'block';
         if(divDecode.style.display == 'block'){
-            divDecode.style.display = 'none';
-        }
-    })
+        divDecode.style.display = 'none';
+    }
+})
 
 //Evento para decodificar
 document.getElementById('decode').addEventListener('click', () => {
         divDecode.style.display = 'block';
         if(divCode.style.display == 'block'){ //tengo que checar si funciona en el evento
-            divCode.style.display = 'none';
-        }
-    })
+        divCode.style.display = 'none';
+    }
+})
 
 //evento del botón para volver a la Intro
 document.getElementById('backToStart').addEventListener('click', pulsarBackButton);
@@ -50,39 +51,29 @@ function pulsarBackButton() {
 }
 
 //Agarrar el offset que introduce usuario
-const offsetEncode = document.getElementById('toCode').addEventListener('click', () => {
+document.getElementById('toCode').addEventListener('click', () => {
+    document.getElementById('result').style.display = 'block';
     let offset = document.getElementById('offsetEncode').value;
     offset = Number(offset);
-    console.log(offset);
-    let userString = document.getElementById('toEncode').value;
-    console.log(userString);
+    let userString = document.getElementById('inputOffset').value;
     let result = window.cipher.encode(offset, userString);
-    console.log(result);
+    return document.getElementById('result').innerHTML='Tu mensaje cifrado es '+ result + ', con un desplazamiento de ' + offset + ' lugares.';
 })
 
 // invocando a la función decode con evento en botón to decode
-const offsetDecode = document.getElementById('toDecode').addEventListener('click', () => {
+document.getElementById('toDecode').addEventListener('click', () => {
+    document.getElementById('result').style.display = 'block';
     let offset = document.getElementById('offsetDecode').value;
     offset = Number(offset);
-    console.log(offset);
     let userString = document.getElementById('decodeText').value;
-    console.log(userString);
     let result = window.cipher.decode(offset, userString);
-    console.log(result);
+    return document.getElementById('result').innerHTML='Tu mensaje cifrado es: '+ result + ', con un desplazamiento de ' + offset + ' lugares.';
 })
 
-
-//Meto el resultado en el p con id result
-//document.getElementById('result').innerHTML='Tu mensaje cifrado es '+ nuevoCifrado;
-
-
-/*
-console.log(codify.addEventListener('click', getMsj(getOffset, mensaje)));
-codify.addEventListener('click', () =>{
-    // Capturas el input
-    // Invocas getMsj(input1, input2)
-    // let cifrado = getMsj(input1,input2)
-//});
+//Botón para limpiar formulario
+/*const clearInfo = document.getElementById('clearInfo').addEventListener('click', () =>{
+    location.reload();
+    divIntro.style.display = 'none';
+    divChoose.style.display = 'block';
+})
 */
-
-
