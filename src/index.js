@@ -50,34 +50,30 @@ function pulsarBackButton() {
 }
 
 //Agarrar el offset que introduce usuario
-const offsetEncode = () => document.getElementById('toCode').addEventListener('click', () => {
+const offsetEncode = document.getElementById('toCode').addEventListener('click', () => {
     let offset = document.getElementById('offsetEncode').value;
     offset = Number(offset);
-    return offset;
+    console.log(offset);
+    let userString = document.getElementById('toEncode').value;
+    console.log(userString);
+    let result = window.cipher.encode(offset, userString);
+    console.log(result);
 })
 
-//Agarrar el string que introduce usuario
-const str = () => document.getElementById('toCode').addEventListener('click', () => {
-    let userString =  document.getElementById('toEncode').value; //Hasta aquí sí agarra el string
-    return userString;
+// invocando a la función decode con evento en botón to decode
+const offsetDecode = document.getElementById('toDecode').addEventListener('click', () => {
+    let offset = document.getElementById('offsetDecode').value;
+    offset = Number(offset);
+    console.log(offset);
+    let userString = document.getElementById('decodeText').value;
+    console.log(userString);
+    let result = window.cipher.decode(offset, userString);
+    console.log(result);
 })
 
-//Llamar a la función
-const encodeResult = () => document.getElementById('toCode').addEventListener('click', () => {
-    alert(window.cipher.encode(offsetEncode, str));
-    alert('tu mensaje codificado es ' + encodeResult());
-})
 
 //Meto el resultado en el p con id result
 //document.getElementById('result').innerHTML='Tu mensaje cifrado es '+ nuevoCifrado;
-
-
-//NO RESPETA ESPACIOS, ¿CÓMO LE HAGO PARA INVOCAR LA FUNCIÓN'??? :'(
-
-
-
-
-
 
 
 /*
@@ -90,6 +86,3 @@ codify.addEventListener('click', () =>{
 */
 
 
-
-
-//Comencemos con el código de la función

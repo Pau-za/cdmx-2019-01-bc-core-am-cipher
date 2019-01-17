@@ -11,7 +11,7 @@ window.cipher = {
         let mayusAsciiTransform = (mayusAsciiOriginal - 65 + offset) %26 + 65; //si no meto el offset, todo bien
         let transformedString = String.fromCharCode(mayusAsciiTransform);
         nuevoCifrado += transformedString; //listo!
-    }
+      }
     return nuevoCifrado;
   },
   decode: (offset, userStr) => {

@@ -60,26 +60,26 @@
         <p>Lo primero que debes hacer es elegir si deseas <strong>codificar</strong> o <strong>decodificar</strong> 
           tu mensaje. Una vez que lo hayas hecho, deberás elegir el <strong>número de desplazamiento </strong>. 
         </p>  
-        <button id="code" class="boton" type="button" name="button">Codificar Mensaje</button>
-        <button id="decode" class="boton" type="button" name="button">Decodificar Mensaje</button>
+        <button id="code" class="boton" type="button">Codificar Mensaje</button>
+        <button id="decode" class="boton" type="button">Decodificar Mensaje</button>
 
-        <button id="backToStart" class="boton" type="button" name="button">Volver a Introducción</button>
+        <button id="backToStart" class="boton" type="button">Volver a Introducción</button>
       </div>
 
       <div id="codeStr">
         <h2>Codificar mensaje</h2>
         <p>A continuación ingresa el mensaje que deseas codificar, posteriormente da click en <strong>Codificar</strong>.</p>
-        <input class = "inputCode" id="toEncode" name="mensajeACodificar" type="text">
+        <input class = "inputCode" id="toEncode" type="text">
         <input class = "inputOffset" type="number" id="offsetEncode">
-        <button id="toCode" class="boton" type="button" name="button">Codificar</button>
+        <button id="toCode" class="boton" type="button">Codificar</button>
       </div>
 
       <div id="decodeStr">
           <h2>Decodificar mensaje</h2>
           <p>A continuación ingresa el mensaje que deseas decodificar, posteriormente da click en <strong>Decodificar</strong>.</p>
-          <textarea name="textArea" class="toDecode" id="decodeText" cols="50" rows="10"></textarea>
+          <textarea class="toDecode" id="decodeText" cols="50" rows="10"></textarea>
           <input class = "inputOffset" type="number" id="offsetDecode">
-          <button id="toDecode" class="boton" type="button" name="button" onclick="cipher.code()">Decodificar</button>
+          <button id="toDecode" class="boton" type="button" name="button">Decodificar</button>
         </div>
 
         <div id= "showResult">
