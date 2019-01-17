@@ -1,77 +1,73 @@
 //Aquí voy a crear eventos
 //Variables globales
-const divIntro = document.getElementById('intro');
-const divExplain = document.getElementById('cifCes');
-const divDesp = document.getElementById('choose');
-const divCode = document.getElementById('codeStr');
-const divDecode = document.getElementById('decodeStr');
-
-
+const divIntro = document.getElementById('intro'); //div de introducción
+const divExplain = document.getElementById('cifCes'); //div explicación del cifrado César
+const divChoose = document.getElementById('choose'); //div para elegir codificar y decodificar
+const divCode = document.getElementById('codeStr'); //div Codificar
+const divDecode = document.getElementById('decodeStr'); //div Decodificar
 
 //evento del botón para la explicación del Cifrado César
-document.getElementById('botonCesar').addEventListener('click', pulsar);
-    function pulsar() {
+document.getElementById('botonCesar').addEventListener('click', () => {
         divIntro.style.display = 'none';
         divExplain.style.display = 'block';
-    }
-
+    })
 
 //evento de botón "estoy lista para iniciar"
-document.getElementById('start').addEventListener('click', pulsarStart);
-    function pulsarStart() {
+document.getElementById('start').addEventListener('click', () => {
         divIntro.style.display = 'none';
-        divDesp.style.display = 'block';
-    }
+        divChoose.style.display = 'block';
+    })
 
 //Evento del botón "volver a introducción"
-document.getElementById('backIntro').addEventListener('click', clickBack);
-    function clickBack() {
+document.getElementById('backIntro').addEventListener('click', () => {
         divExplain.style.display = 'none';
         divIntro.style.display = 'block';
-    }
+    })
 
-    
-//Input que recibe el número de desplazamiento al dar click en botón ingresar número
-/*const getOffset = () => {
-    const offset = document.getElementById('offsetNumb').value;
-    console.log(Number(offset)); //Si pongo console.log sí limpia el input, y guarda el valor
-    let clearInput = document.getElementById('offsetNumb').value=''; //limpia input
-    return offset;
-};
-document.getElementById('offsetButton').addEventListener('click', getOffset);
-*/
-
-//Evento para insertar codificar
-document.getElementById('code').addEventListener('click', showCode);
-    function showCode () {
+//Evento para codificar
+document.getElementById('code').addEventListener('click', () => {
         divCode.style.display = 'block';
         if(divDecode.style.display == 'block'){
             divDecode.style.display = 'none';
         }
-    }
+    })
 
-//Agarrar string que introduce usuario
-/*let nuevoCifrado = ''; //variable que va a recoger el resultado de la transformación
-const getString = (offset, userStr) => {
-    offset = document.getElementById('offsetNumb').value;
-    offset = Number(offset); //Si pongo console.log sí limpia el input, y guarda el valor
-    userStr = document.getElementById('toEncode').value; //Hasta aquí sí agarra el string
-    let mayuscula = userStr.toUpperCase(); //Sí da el string en mayúsculas
-    let asciiOriginal = mayuscula.charCodeAt(); //variable que guarda el código ascii de cada caracter
-    let clearInput = document.getElementsByClassName('inputCode').value=''; //limpia input
-    for (let i = 0; i < mayuscula.length; i++){
-        let mayusAsciiOriginal = mayuscula.charCodeAt(i); //Sí da el arreglo del código ascii de cara caracter
-        let mayusAsciiTransform = (mayusAsciiOriginal + 65 - offset) %26 + 65; //si no meto el offset, todo bien
-        let transformedString = String.fromCharCode(mayusAsciiTransform);
-        nuevoCifrado += transformedString; //listo!
-    }
-    return nuevoCifrado;
+//Evento para decodificar
+document.getElementById('decode').addEventListener('click', () => {
+        divDecode.style.display = 'block';
+        if(divCode.style.display == 'block'){ //tengo que checar si funciona en el evento
+            divCode.style.display = 'none';
+        }
+    })
+
+//evento del botón para volver a la Intro
+document.getElementById('backToStart').addEventListener('click', pulsarBackButton);
+function pulsarBackButton() {
+    divChoose.style.display = 'none';
+    divCode.style.display = 'none';
+    divDecode.style.display = 'none';
+    divIntro.style.display = 'block';
 }
 
-//Invocando función
-document.getElementById('toCode').addEventListener('click', getString);
-console.log(getString());
-*/
+//Agarrar el offset que introduce usuario
+const offsetEncode = () => document.getElementById('toCode').addEventListener('click', () => {
+    let offset = document.getElementById('offsetEncode').value;
+    offset = Number(offset);
+    return offset;
+})
+
+//Agarrar el string que introduce usuario
+const str = () => document.getElementById('toCode').addEventListener('click', () => {
+    let userString =  document.getElementById('toEncode').value; //Hasta aquí sí agarra el string
+    return userString;
+})
+
+//Llamar a la función
+const encodeResult = () => document.getElementById('toCode').addEventListener('click', () => {
+    alert(window.cipher.encode(offsetEncode, str));
+    alert('tu mensaje codificado es ' + encodeResult());
+})
+
 //Meto el resultado en el p con id result
 //document.getElementById('result').innerHTML='Tu mensaje cifrado es '+ nuevoCifrado;
 
@@ -92,25 +88,8 @@ codify.addEventListener('click', () =>{
     // let cifrado = getMsj(input1,input2)
 //});
 */
-//Evento para insertar decodificar
-
-document.getElementById('decode').addEventListener('click', showDecode);
-    function showDecode () {
-        divDecode.style.display = 'block';
-        if(divCode.style.display == 'block'){ //tengo que checar si funciona en el evento
-            divCode.style.display = 'none';
-        }
-    }
 
 
-    //evento del botón atrás, para volver a la Intro
 
-    document.getElementById('backToStart').addEventListener('click', pulsarBackButton);
-function pulsarBackButton() {
-    divDesp.style.display = 'none';
-    divCode.style.display = 'none';
-    divDecode.style.display = 'none';
-    divIntro.style.display = 'block';
-}
 
 //Comencemos con el código de la función
