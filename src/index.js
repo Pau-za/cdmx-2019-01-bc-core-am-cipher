@@ -5,6 +5,7 @@ const divExplain = document.getElementById('cifCes'); //div explicación del cif
 const divChoose = document.getElementById('choose'); //div para elegir codificar y decodificar
 const divCode = document.getElementById('codeStr'); //div Codificar
 const divDecode = document.getElementById('decodeStr'); //div Decodificar
+const divResult = document.getElementById('result'); //div result
 //const divClear = document.getElementById('clear'); //div Limpiar formulario
 
 //evento del botón para la explicación del Cifrado César
@@ -30,6 +31,7 @@ document.getElementById('code').addEventListener('click', () => {
         divCode.style.display = 'block';
         if(divDecode.style.display == 'block'){
         divDecode.style.display = 'none';
+        divResult.style.display = 'none';
     }
 })
 
@@ -38,6 +40,7 @@ document.getElementById('decode').addEventListener('click', () => {
         divDecode.style.display = 'block';
         if(divCode.style.display == 'block'){ //tengo que checar si funciona en el evento
         divCode.style.display = 'none';
+        divResult.style.display = 'none';
     }
 })
 
@@ -47,6 +50,7 @@ function pulsarBackButton() {
     divChoose.style.display = 'none';
     divCode.style.display = 'none';
     divDecode.style.display = 'none';
+    divResult.style.display = 'none';
     divIntro.style.display = 'block';
 }
 
@@ -71,9 +75,8 @@ document.getElementById('toDecode').addEventListener('click', () => {
 })
 
 //Botón para limpiar formulario
-/*const clearInfo = document.getElementById('clearInfo').addEventListener('click', () =>{
+const clearInfo = document.getElementById('clearInfo').addEventListener('click', () =>{
     location.reload();
-    divIntro.style.display = 'none';
+    divIntro.style.display = 'none'; 
     divChoose.style.display = 'block';
 })
-*/

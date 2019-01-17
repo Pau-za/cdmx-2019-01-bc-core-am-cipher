@@ -5,17 +5,13 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    size: 15px;
     background-color: #D7CeC7;
     color: #565656;
 }
 
-h1 {
-    font-size: 250%;
-}
-
 h1, .olsw {
     font-family: 'Coiny', sans-serif;
-    font-size: 30px;
 }
 
 #cifCes, #choose, #codeStr, #decodeStr, #goIntro, #result {
@@ -57,5 +53,5 @@ h1, .olsw {
     margin-right: 30%;
     background-color: #C09F80;
     color: #565656;
-    font-size: 
+    font-size: 30px;
 }
