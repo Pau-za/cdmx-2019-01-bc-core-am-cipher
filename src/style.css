@@ -6,8 +6,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     size: 15px;
-    background-color: #D7CeC7;
-    color: #565656;
+    background-color: #D2F2F2;
+    color: #053C2D;
 }
 
 h1, .olsw {
@@ -22,16 +22,16 @@ h1, .olsw {
     padding: 10px;
     font-weight: 600;
     font-size: 15px;
-    color:  #D7CeC7;
-    background-color: #76323F;
+    color:  #053C2D;
+    background-color: #FEB339;
     border-radius: 10px;  
-    border-color: #76323F;
+    border-color: #FEB339;
 }
 
 .boton:hover {
-    color: rgb(7, 3, 17);
-    background-color: #C09F80;
-    border-color: #C09F80;
+    color: #053C2D;
+    background-color: #FFDA9F;
+    border-color: #FFDA9F;
 }
 
 #offsetEncode, #offsetDecode {
@@ -47,11 +47,11 @@ h1, .olsw {
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
     border: thin;
-    border-color: #565656;
+    border-color: #1EB3B3;
     float: none;
     margin-left: 30%;
     margin-right: 30%;
-    background-color: #C09F80;
-    color: #565656;
+    background-color: #1EB3B3;
+    color: #053C2D;
     font-size: 30px;
 }
