@@ -14,7 +14,7 @@ h1, .olsw {
     font-family: 'Coiny', sans-serif;
 }
 
-#cifCes, #choose, #codeStr, #decodeStr, #goIntro, #result {
+ #cifCes, #choose, #codeStr, #decodeStr, #goIntro, #result, #resultMessage  {
     display: none;
 }
 

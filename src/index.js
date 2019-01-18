@@ -6,7 +6,7 @@ const divChoose = document.getElementById('choose'); //div para elegir codificar
 const divCode = document.getElementById('codeStr'); //div Codificar
 const divDecode = document.getElementById('decodeStr'); //div Decodificar
 const divResult = document.getElementById('result'); //div result
-//const divClear = document.getElementById('clear'); //div Limpiar formulario
+const divResultMessage = document.getElementById('resultMessage'); //div result
 
 //evento del botón para la explicación del Cifrado César
 document.getElementById('botonCesar').addEventListener('click', () => {
@@ -29,18 +29,21 @@ document.getElementById('backIntro').addEventListener('click', () => {
 //Evento para codificar
 document.getElementById('code').addEventListener('click', () => {
         divCode.style.display = 'block';
+        divResult.style.display = 'none';
+        divResultMessage.style.display = 'none';
         if(divDecode.style.display == 'block'){
         divDecode.style.display = 'none';
-        divResult.style.display = 'none';
+        
     }
 })
 
 //Evento para decodificar
 document.getElementById('decode').addEventListener('click', () => {
         divDecode.style.display = 'block';
+        divResult.style.display = 'none';
+        divResultMessage.style.display = 'none';
         if(divCode.style.display == 'block'){ //tengo que checar si funciona en el evento
         divCode.style.display = 'none';
-        divResult.style.display = 'none';
     }
 })
 
@@ -56,7 +59,8 @@ function pulsarBackButton() {
 
 //Agarrar el offset que introduce usuario
 document.getElementById('toCode').addEventListener('click', () => {
-    document.getElementById('result').style.display = 'block';
+    divResult.style.display = 'block';
+    divResultMessage.style.display = 'block';
     let offset = document.getElementById('offsetEncode').value;
     offset = Number(offset);
     let userString = document.getElementById('inputOffset').value;
@@ -66,7 +70,8 @@ document.getElementById('toCode').addEventListener('click', () => {
 
 // invocando a la función decode con evento en botón to decode
 document.getElementById('toDecode').addEventListener('click', () => {
-    document.getElementById('result').style.display = 'block';
+    divResult.style.display = 'block';
+    divResultMessage.style.display = 'block';
     let offset = document.getElementById('offsetDecode').value;
     offset = Number(offset);
     let userString = document.getElementById('decodeText').value;
