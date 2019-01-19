@@ -1,57 +1,116 @@
 #root {
-    text-align: center;
-    text-justify: inter-word;
+  text-align: center;
+  text-justify: inter-word;
+  width: 800px;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom right, #E4CEF7, #B593D3, #AE62EF);
+
+}
+
+h1 {
+  font-size: 50px;
+  color: #140424;
+  height: 80px;
+  padding: 30px;
+  background-image: linear-gradient(#F3CEF7, #F2AAEC);
+  margin: 0;
+  border: 15px dotted #07022B;
+}
+
+h1,
+.olsw {
+  font-family: 'Coiny', sans-serif;
+
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    size: 15px;
-    background-color: #D2F2F2;
-    color: #053C2D;
+  font-family: 'Open Sans', sans-serif;
+  size: 15px;
+  color: #07022B;
 }
 
-h1, .olsw {
-    font-family: 'Coiny', sans-serif;
-}
-
- #cifCes, #choose, #codeStr, #decodeStr, #goIntro, #result, #resultMessage  {
-    display: none;
+#cifCes,
+#choose,
+#codeStr,
+#decodeStr,
+#goIntro,
+#result,
+#resultMessage {
+  display: none;
 }
 
 .boton {
-    padding: 10px;
-    font-weight: 600;
-    font-size: 15px;
-    color:  #053C2D;
-    background-color: #FEB339;
-    border-radius: 10px;  
-    border-color: #FEB339;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #140424;
+  background-color: #FF3CF8;
+  border-color: #FF3CF8;
+  border-radius: 10px;
 }
 
 .boton:hover {
-    color: #053C2D;
-    background-color: #FFDA9F;
-    border-color: #FFDA9F;
+  color: #140424;
+  background-color: #F3CEF7;
+  border-color: #F3CEF7;
 }
 
-#offsetEncode, #offsetDecode {
-    width : 50px;
+#offsetEncode,
+#offsetDecode {
+  width: 50px;
 }
 
-.toDecode, .toCode {
-    vertical-align: middle;
-    margin: 10px;
+.toDecode,
+.toCode {
+  vertical-align: middle;
+  margin: 10px;
 }
 
 #result {
-    padding: 10px 10px 10px 10px;
-    border-radius: 5px;
-    border: thin;
-    border-color: #1EB3B3;
-    float: none;
-    margin-left: 30%;
-    margin-right: 30%;
-    background-color: #1EB3B3;
-    color: #053C2D;
-    font-size: 30px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  border: 5px groove #F9EAF8;
+  float: none;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: #340231;
+  color: #E4CEF7;
+  font-size: 30px;
+  font-family: 'VT323', monospace;
+}
+
+.icon-arrow-repeat-outline:before {
+  content: "\e900";
+}
+
+.icon-key:before {
+  content: "\e901";
+}
+
+.icon-bubbles4:before {
+  content: "\e970";
+}
+
+.icon-lock:before {
+  content: "\e98f";
+}
+
+.icon-unlocked:before {
+  content: "\e990";
+}
+
+.icon-share2:before {
+  content: "\ea82";
+}
+
+.icon-mail4:before {
+  content: "\ea86";
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+
+.icon-whatsapp:before {
+  content: "\ea93";
 }

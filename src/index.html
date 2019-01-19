@@ -1,105 +1,123 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Coiny|Open+Sans|PT+Sans" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root">
-      <div id="intro">
-      <h1 class="olsw">Bienvenida a OLSW</h1>
-      <h3>¿Qué es, y de dónde sale <strong class="olsw">OLSW</strong>?</h3> 
-      <p>Tal vez te preguntas de dónde viene la palabra <strong class="olsw">OLSW</strong>, pues es la palabra <strong>HELP</strong> (que significa 
-        <em>ayuda</em> en inglés) cifrada, porque eso es lo que buscamos hacer, <strong>ayudar a las mujeres que lo necesiten</strong>.
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Coiny|Open+Sans|PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/befe142e0d/UntitledProject/style.css">
+</head>
+
+<body>
+
+  <div id="root">
+    <div id="image">
+      <img src="images/feminism.jpg" alt="">
+    </div>
+    <div id="intro">
+      <h1 class="olsw"><span class="icon-arrow-repeat-outline"></span> OLSW</h1>
+      <h3>¿Qué es, y de dónde sale <strong class="olsw">OLSW</strong>?</h3>
+      <p>Tal vez te preguntas de dónde viene la palabra <strong class="olsw">OLSW</strong>, pues es la palabra <strong>HELP</strong>
+        (que significa
+        <em>ayuda</em> en inglés) cifrada, porque eso es lo que buscamos hacer, <strong>ayudar a las mujeres que lo
+          necesiten</strong>.
       </p>
-      <p><strong class="olsw">OLSW</strong> es una aplicación que cifra o codifica mensajes utilizando el <strong>Cifrado César</strong>.</p>
+      <p><strong class="olsw">OLSW</strong> es una aplicación que cifra o codifica mensajes utilizando el <strong>Cifrado
+          César</strong>.</p>
       <p>Si deseas saber más sobre el Cifrado César da click en el siguiente botón:</p>
       <button id="botonCesar" class="boton" type="button">Cifrado César</button>
-      <p><strong class="olsw">OLSW</strong> está pensada por y para mujeres que viven el acoso callejero a diario en la Ciudad de México.
-       Comprendemos la necesidad de sentirse a salvo. Si alguna vez has llegado a sentirte insegura, o que te encuentras en peligro, entonces esta
-       aplicación es para ti.</p>
-      <p><strong class="olsw">OLSW</strong> te provee un servicio simple que te ayuda a ponerte en contacto con aquellas personas en quienes confías, 
-        sin correr riesgo de que alguien más lea tus mensajes, ya que <strong class="olsw">OLSW</strong> codifica tus mensajes para que terceras 
-        personas no puedan conocer su contenido. De igual manera <strong class="olsw">OLSW</strong> decodifica los mensajes codificados para que 
-        los destinatarios puedan recibir la información que proporcionaste, y así tomar las acciones pertinentes para que puedas estar segura.
+      <p><strong class="olsw">OLSW</strong> está pensada por y para mujeres que viven el acoso callejero a diario en la
+        Ciudad de México.
+        Comprendemos la necesidad de sentirse a salvo. Si alguna vez has llegado a sentirte insegura, o que te
+        encuentras en peligro, entonces esta
+        aplicación es para ti.</p>
+      <p><strong class="olsw">OLSW</strong> te provee un servicio simple que te ayuda a ponerte en contacto con
+        aquellas personas en quienes confías,
+        sin correr riesgo de que alguien más lea tus mensajes, ya que <strong class="olsw">OLSW</strong> codifica tus
+        mensajes para que terceras
+        personas no puedan conocer su contenido. De igual manera <strong class="olsw">OLSW</strong> decodifica los
+        mensajes codificados para que
+        los destinatarios puedan recibir la información que proporcionaste, y así tomar las acciones pertinentes para
+        que puedas estar segura.
       </p>
-      
       <button id="start" class="boton" type="button" name="button">Estoy lista para iniciar</button>
     </div>
-      
-      <div id="cifCes">
+
+    <div id="cifCes">
       <h2>Cifrado César</h2>
-      <p>El <strong>Cifrado César</strong>, también conocido como cifrado por <strong>desplazamiento</strong>, 
+      <p>El <strong>Cifrado César</strong>, también conocido como cifrado por <strong>desplazamiento</strong>,
         es un método de cifrado que utilizaba el Emperador Romano Julio César. Este método consiste en reemplazar
-         una letra del mensaje original por otra letra, que se encuentra un número determinado de posiciones más
-         adelante en el abecedario.
+        una letra del mensaje original por otra letra, que se encuentra un número determinado de posiciones más
+        adelante en el abecedario.
       </p>
-      <p>Por ejemplo, Si tenemos las letras ABCDE, y determinamos que el número de lugares que se 
-         desplazará nuestro mensaje es 4, entonces la A será sustituída por la letra E, y así se 
-         recorrerán todas las demás letras del abecedario. Siempre el mismo número de posiciones 
-         que se eligió desde el inicio.
+      <p>Por ejemplo, Si tenemos las letras ABCDE, y determinamos que el número de lugares que se
+        desplazará nuestro mensaje es 4, entonces la A será sustituída por la letra E, y así se
+        recorrerán todas las demás letras del abecedario. Siempre el mismo número de posiciones
+        que se eligió desde el inicio.
       </p>
       <button id="backIntro" class="boton" type="button" name="button">Volver a Introducción</button>
-      </div>
-
-      <div id="choose">
-        <h1 class="olsw">OLSW</h1>
-        <p>Lo primero que debes hacer es elegir si deseas <strong>codificar</strong> o <strong>decodificar</strong> 
-          tu mensaje. 
-        </p>  
-        <button id="code" class="boton" type="button">Codificar Mensaje</button>
-        <button id="decode" class="boton" type="button">Decodificar Mensaje</button>
-        <button id="backToStart" class="boton" type="button">Volver a Introducción</button>
-      </div>
-
-    
-      <div id="codeStr">
-        <h2>Codificar mensaje</h2>
-          <form>
-            <label for="inputOffset"> Ingresa tu mensaje a decodificar aquí:
-              <br>
-                <textarea class = "toCode" id="inputOffset" cols="40" rows="5"></textarea>
-            </label>
-              <br>
-            <label for="offsetEncode"> Ahora ingresa tu número de desplazamiento:
-              <br>
-                <input class = "toCode" type="number" id="offsetEncode">
-            </label>
-            <br>
-              <p>A continuación da click en <strong>Codificar</strong>.</p>
-              <button id="toCode" class="boton" type="button">Codificar</button>
-          </form>
-      </div>
-
-      <div id="decodeStr">
-          <h2>Decodificar mensaje</h2>
-          <form>
-            <label for="decodeText"> Ingresa tu mensaje aquí: 
-              <br>
-                <textarea class="toDecode" id="decodeText" cols="40" rows="5"></textarea>
-              </label>
-              <br>
-              <label for="offsetDecode"> Ahora ingresa tu número de desplazamiento:
-                <br>
-                  <input class = "toDecode" type="number" id="offsetDecode">
-              </label>
-            <br>
-            <p>A continuación da click en <strong>Decodificar</strong>.</p>
-              <button id="toDecode" class="boton" type="button">Decodificar</button>
-          </form>
-        </div>
-
-      <div id= "showResult">
-         <p id="result"></p>
-         <p id="resultMessage">Este mensaje debes enviárselo a tu contacto de confianza, quien deberá ingresarlo en el espacio indicado para descifrarlo 
-           con el mismo <strong>número de desplazamiento</strong>. De esta manera podrá conocer tu mensaje.
-         </p> 
-      </div>
-     
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+    <div id="choose">
+      <h1 class="olsw"><span class="icon-arrow-repeat-outline"></span> OLSW</h1>
+      <p>Lo primero que debes hacer es elegir si deseas <strong>codificar</strong> o <strong>decodificar</strong>
+        tu mensaje.
+      </p>
+      <button id="code" class="boton" type="button"><span class="icon-lock"></span> Codificar Mensaje</button>
+      <button id="decode" class="boton" type="button"><span class="icon-unlocked"></span> Decodificar Mensaje</button>
+      <button id="backToStart" class="boton" type="button">Volver a Introducción</button>
+    </div>
+
+    <div id="codeStr">
+      <h2>Codificar mensaje</h2>
+      <form>
+        <label for="inputOffset"> Ingresa tu mensaje a decodificar aquí:
+          <br>
+          <textarea class="toCode" id="inputOffset" cols="40" rows="5"></textarea>
+        </label>
+        <br>
+        <label for="offsetEncode"> Ahora ingresa tu número de desplazamiento:
+          <br>
+          <input class="toCode" type="number" id="offsetEncode">
+        </label>
+        <br>
+        <p>A continuación da click en <strong>Codificar</strong>.</p>
+        <button id="toCode" class="boton" type="button">Codificar</button>
+      </form>
+    </div>
+
+    <div id="decodeStr">
+      <h2>Decodificar mensaje</h2>
+      <form>
+        <label for="decodeText"> Ingresa tu mensaje aquí:
+          <br>
+          <textarea class="toDecode" id="decodeText" cols="40" rows="5"></textarea>
+        </label>
+        <br>
+        <label for="offsetDecode"> Ahora ingresa tu número de desplazamiento:
+          <br>
+          <input class="toDecode" type="number" id="offsetDecode">
+        </label>
+        <br>
+        <p>A continuación da click en <strong>Decodificar</strong>.</p>
+        <button id="toDecode" class="boton" type="button">Decodificar</button>
+      </form>
+    </div>
+
+    <div id="showResult">
+      <p id="result"></p>
+      <p id="resultMessage">Este mensaje debes enviárselo a tu contacto de confianza, quien deberá ingresarlo en el
+        espacio indicado para descifrarlo
+        con el mismo <strong>número de desplazamiento</strong>. De esta manera podrá conocer tu mensaje.
+      </p>
+    </div>
+  </div>
+  <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de fondo creado por freepik - www.freepik.es</a>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
 </html>
