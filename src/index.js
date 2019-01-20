@@ -1,64 +1,66 @@
 //Aquí voy a crear eventos
 //Variables globales
-const divIntro = document.getElementById('intro'); //div de introducción
-const divExplain = document.getElementById('cifCes'); //div explicación del cifrado César
-const divChoose = document.getElementById('choose'); //div para elegir codificar y decodificar
+const divIntro = document.getElementById('intro'); //div de inicio
+const divBasicInfoOlsw = document.getElementById('basicExpl'); //div de explicación Olsw, dentro está el CifCes
+const divExplain = document.getElementById('cifCes'); //div del cifrado César
 const divCode = document.getElementById('codeStr'); //div Codificar
 const divDecode = document.getElementById('decodeStr'); //div Decodificar
-const divResult = document.getElementById('result'); //div result
-const divResultMessage = document.getElementById('resultMessage'); //div result
+const divResultMessage = document.getElementById('resultMessage'); //div result que contiene al resultado cifrado 
+const divResult = document.getElementById('result'); //div resultado cifrado o descifrado
+const divClear = document.getElementById('clear'); //div para limpiar formularios
 
-//evento del botón para la explicación del Cifrado César
-document.getElementById('botonCesar').addEventListener('click', () => {
+//evento que abre explicación de app
+document.getElementById('introButton').addEventListener('click', () => {
   divIntro.style.display = 'none';
+  divBasicInfoOlsw.style.display = 'block';
+})
+
+//evento del botón de explicación del Cifrado César
+document.getElementById('botonCesar').addEventListener('click', () => {
+  divBasicInfoOlsw.style.display = 'none';
   divExplain.style.display = 'block';
 })
 
-//evento de botón "estoy lista para iniciar"
-document.getElementById('start').addEventListener('click', () => {
-  divIntro.style.display = 'none';
-  divChoose.style.display = 'block';
+//evento de botón ir a inicio desde cifrado cesar
+document.getElementById('goStart').addEventListener('click', () => {
+  divExplain.style.display = 'none';
+  divIntro.style.display = 'block';
 })
 
-//Evento del botón "volver a introducción"
-document.getElementById('backIntro').addEventListener('click', () => {
+//Evento del botón "volver a información"
+document.getElementById('backInformation').addEventListener('click', () => {
   divExplain.style.display = 'none';
+  divBasicInfoOlsw.style.display = 'block';
+})
+
+//Evento para volver a inicio desde explicación de olsw
+document.getElementById('goBack').addEventListener('click', () => {
+  divBasicInfoOlsw.style.display = 'none';
   divIntro.style.display = 'block';
 })
 
 //Evento para codificar
 document.getElementById('code').addEventListener('click', () => {
-  divCode.style.display = 'block';
   divResult.style.display = 'none';
   divResultMessage.style.display = 'none';
   if (divDecode.style.display == 'block') {
     divDecode.style.display = 'none';
-
   }
+  divCode.style.display = 'block';
+  divClear.style.display = 'block';
 })
 
 //Evento para decodificar
 document.getElementById('decode').addEventListener('click', () => {
-  divDecode.style.display = 'block';
   divResult.style.display = 'none';
   if (divCode.style.display == 'block') { //tengo que checar si funciona en el evento
     divCode.style.display = 'none';
-  }
-  if (divResultMessage.style.display = 'block')
+  }else if (divResultMessage.style.display == 'block') {
     divResultMessage.style.display = 'none';
+  } 
+  divDecode.style.display = 'block';
+  divClear.style.display = 'block';
 })
-
-//evento del botón para volver a la Intro
-document.getElementById('backToStart').addEventListener('click', pulsarBackButton);
-
-function pulsarBackButton() {
-  divChoose.style.display = 'none';
-  divCode.style.display = 'none';
-  divDecode.style.display = 'none';
-  divResult.style.display = 'none';
-  divResultMessage.style.display = 'none';
-  divIntro.style.display = 'block';
-}
 
 //Agarrar el offset que introduce usuario
 document.getElementById('toCode').addEventListener('click', () => {
@@ -79,12 +81,10 @@ document.getElementById('toDecode').addEventListener('click', () => {
   offset = Number(offset);
   let userString = document.getElementById('decodeText').value;
   let result = window.cipher.decode(offset, userString);
-  return document.getElementById('result').innerHTML = 'Tu mensaje cifrado es: "' + result + '", con un desplazamiento de ' + offset + ' lugares.';
+  return document.getElementById('result').innerHTML = 'Tu mensaje descifrado es: "' + result + '", con un desplazamiento de ' + offset + ' lugares.';
 })
 
-//Botón para limpiar formulario
-document.getElementById('clearInfo').addEventListener('click', () => {
+//Botón para limpiar formulario de Codificar
+document.getElementById('clearCode').addEventListener('click', () => {
   location.reload();
-  divIntro.style.display = 'none';
-  divChoose.style.display = 'block';
 })

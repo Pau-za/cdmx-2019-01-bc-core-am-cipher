@@ -6,7 +6,7 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Coiny|Open+Sans|PT+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <link rel="stylesheet" href="https://i.icomoon.io/public/temp/befe142e0d/UntitledProject/style.css">
 </head>
 
@@ -16,13 +16,24 @@
     <div id="image">
       <img src="images/feminism.jpg" alt="">
     </div>
+
     <div id="intro">
       <h1 class="olsw"><span class="icon-arrow-repeat-outline"></span> OLSW</h1>
-      <h3>¿Qué es, y de dónde sale <strong class="olsw">OLSW</strong>?</h3>
-      <p>Tal vez te preguntas de dónde viene la palabra <strong class="olsw">OLSW</strong>, pues es la palabra <strong>HELP</strong>
-        (que significa
-        <em>ayuda</em> en inglés) cifrada, porque eso es lo que buscamos hacer, <strong>ayudar a las mujeres que lo
-          necesiten</strong>.
+      <p>Si deseas conocernos, puedes dar click en el siguiente botón: </p>
+      <button class="boton" id="introButton" name="introduccion" type="button">Información</button>
+      <p>Para comenzar, debes elegir si deseas <strong>codificar</strong> o <strong>decodificar</strong>
+        tu mensaje.
+      </p>
+      <button id="code" class="boton" type="button"><span class="icon-lock"></span> Codificar Mensaje</button>
+      <button id="decode" class="boton" type="button"><span class="icon-unlocked"></span> Decodificar Mensaje</button>
+    </div>
+
+    <div id="basicExpl">
+      <h1 class="olsw"><span class="icon-arrow-repeat-outline"></span> OLSW</h1>
+      <h2>¿Qué es, y de dónde sale <strong class="olsw">OLSW</strong>?</h2>
+      <p>Tal vez te preguntas de dónde viene la palabra <strong class="olsw">OLSW</strong>, pues es la palabra cifrada
+        <strong>HELP</strong> (que significa <em>ayuda</em> en inglés) , porque eso es lo que buscamos hacer, <strong>ayudar
+          a las mujeres que lo necesiten</strong>.
       </p>
       <p><strong class="olsw">OLSW</strong> es una aplicación que cifra o codifica mensajes utilizando el <strong>Cifrado
           César</strong>.</p>
@@ -42,7 +53,7 @@
         los destinatarios puedan recibir la información que proporcionaste, y así tomar las acciones pertinentes para
         que puedas estar segura.
       </p>
-      <button id="start" class="boton" type="button" name="button">Estoy lista para iniciar</button>
+      <button id="goBack" class="boton" type="button" name="Volver a inicio">Volver a Inicio</button>
     </div>
 
     <div id="cifCes">
@@ -57,17 +68,8 @@
         recorrerán todas las demás letras del abecedario. Siempre el mismo número de posiciones
         que se eligió desde el inicio.
       </p>
-      <button id="backIntro" class="boton" type="button" name="button">Volver a Introducción</button>
-    </div>
-
-    <div id="choose">
-      <h1 class="olsw"><span class="icon-arrow-repeat-outline"></span> OLSW</h1>
-      <p>Lo primero que debes hacer es elegir si deseas <strong>codificar</strong> o <strong>decodificar</strong>
-        tu mensaje.
-      </p>
-      <button id="code" class="boton" type="button"><span class="icon-lock"></span> Codificar Mensaje</button>
-      <button id="decode" class="boton" type="button"><span class="icon-unlocked"></span> Decodificar Mensaje</button>
-      <button id="backToStart" class="boton" type="button">Volver a Introducción</button>
+      <button id="goStart" class="boton" type="button" name="Ir a inicio">Ir a Inicio</button>
+      <button id="backInformation" class="boton" type="button" name="Atrás">Atrás</button>
     </div>
 
     <div id="codeStr">
@@ -85,6 +87,7 @@
         <br>
         <p>A continuación da click en <strong>Codificar</strong>.</p>
         <button id="toCode" class="boton" type="button">Codificar</button>
+        
       </form>
     </div>
 
@@ -106,6 +109,10 @@
       </form>
     </div>
 
+    <div id="clear">
+        <button id="clearCode" class="boton" type="button">Limpiar Información</button>
+    </div>
+
     <div id="showResult">
       <p id="result"></p>
       <p id="resultMessage">Este mensaje debes enviárselo a tu contacto de confianza, quien deberá ingresarlo en el
@@ -113,8 +120,10 @@
         con el mismo <strong>número de desplazamiento</strong>. De esta manera podrá conocer tu mensaje.
       </p>
     </div>
+
+    <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de fondo creado por freepik - www.freepik.es</a>
   </div>
-  <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de fondo creado por freepik - www.freepik.es</a>
+
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 
