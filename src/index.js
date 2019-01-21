@@ -55,9 +55,9 @@ document.getElementById('decode').addEventListener('click', () => {
   divResult.style.display = 'none';
   if (divCode.style.display == 'block') { //tengo que checar si funciona en el evento
     divCode.style.display = 'none';
-  }else if (divResultMessage.style.display == 'block') {
+  } else if (divResultMessage.style.display == 'block') {
     divResultMessage.style.display = 'none';
-  } 
+  }
   divDecode.style.display = 'block';
   divClear.style.display = 'block';
 })
