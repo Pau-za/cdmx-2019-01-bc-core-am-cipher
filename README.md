@@ -1,3 +1,13 @@
+# Usuarios de OLSW
+
+## ¿Quiénes son?
+
+OLSW va dirigida a mujeres. Vivimos en un país en el que cada 24 h son asesinadas, en promedio, siete mujeres por ser mujeres. Es decir, vivimos en uno de los países de Latino-América con mayor tasa de feminicidios, lo que indica que, en México, las mujeres nos enfrentamos a la violencia machista cada día. El feminicidio es la forma más grave de violencia machista, pero no es la única, existen otras formas, como el acoso callejero, el abuso sexual, las violaciones, entre otras.
+
+Bajo un panorama de violencia sistematizada hacia las mujeres, necesitamos crear redes entre nosotras mismas, para sentirnos seguras. Es por ello que en los vagones exclusivos de mujeres, en el metro de la CDMX, viajan las mujeres durante las horas pico. De esta manera, continuamente las mujeres buscamos formas de estar en contacto con personas de nuestra confianza, como el "avísame cuando llegues a casa", después de verte con tus amigas(os), sin importar la hora el día. La semana pasada leí que una mujer vivió un intento de secuestro en el transborde de la estación Chabacano del metro de la CDMX, un sábado a las 3:00 pm. Nadie a su alrededor hizo nada por rescatarla, afortunadamente logró escapar, y al llegar a la estación de Viaducto de la línea 2 del metro, encontró a un policía y le informó lo que le había ocurrido, el policía le dijo que no iban a poder encontrar a los delincuentes. Bajo una situación así cualquier persona buscaría ponerse en contacto con sus seres queridos. 
+
+OLSW nace como una alternativa para las mujeres que puedan encontrarse bajo una situación de riesgo. OLSW ofrece un servicio de cifrado de mensajes, utilizando el método de Cifrado César, para mujeres que se sientan vulnerables. De esta manera podrían enviar un mensaje a una o más personas de su confianza. Asegurándose de que terceras personas no puedan enterarse del contenido del mensaje, ya sea para pedir auxilio, o alertar sobre algún peligro potencial. Asimismo, OLSW provee la función de descifrar cualquier mensaje que se haya cifrado en la misma página. Únicamente el o la usuaria tendrá que asegurarse de insertar el mismo número de desplazamiento que se utilizó originalmente para cifrar el mensaje. Toda esta información se entrega a la usuaria al momento de mostrar el mensaje cifrado o descifrado.
+
 # Proceso y decisiones del Diseño de OLSW
 
 ## Primera Fase
