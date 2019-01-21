@@ -2,23 +2,39 @@ window.cipher = {
   encode: (offset, userStr) => {
     let nuevoCifrado = ""; //variable que va a recoger el resultado de la transformación
     offset = Number(offset); //Si pongo console.log sí limpia el input, y guarda el valor
-    let mayuscula = userStr.toUpperCase(); //Sí da el string en mayúsculas
-    for (let i = 0; i < mayuscula.length; i++) {
-      let mayusAsciiOriginal = mayuscula.charCodeAt(i); //Sí da el arreglo del código ascii de cara caracter
-      let mayusAsciiTransform = (mayusAsciiOriginal - 65 + offset) % 26 + 65; //si no meto el offset, todo bien
-      let transformedString = String.fromCharCode(mayusAsciiTransform);
-      nuevoCifrado += transformedString; //listo!
+    for (let i = 0; i < userStr.length; i++) {
+      let originalAscii = userStr.charCodeAt(i); //Sí da el arreglo del código ascii de cara caracter
+      if (originalAscii >= 32 && originalAscii <= 64) { //solo seleccionamos a los caracteres que no son letras (antes de las mayúsculas)
+        let characteres = String.fromCharCode(originalAscii); //Obtiene el código ascii 
+        nuevoCifrado += characteres; //le sumamos el caracter tal cual está desde el inicio
+      } else if (originalAscii >= 65 && originalAscii <= 90) {
+        let capitalLetter = (originalAscii - 65 + offset) % 26 + 65; //si no meto el offset, todo bien
+        let capitalReturn = String.fromCharCode(capitalLetter); //mayuscula cifrada
+        nuevoCifrado += capitalReturn; //listo!
+      } else if (originalAscii >= 97 && originalAscii <= 122) {
+        let lowerLetter = (originalAscii - 97 + offset) % 26 + 97;
+        let lowerReturn = String.fromCharCode(lowerLetter);
+        nuevoCifrado += lowerReturn;
+      }
     }
     return nuevoCifrado;
   },
   decode: (offset, userStr) => {
     let nuevoDescifrado = "";
-    let mayusculaDec = userStr.toUpperCase();
-    for (let i = 0; i < mayusculaDec.length; i++) {
-      let mayusAsciiDec = mayusculaDec.charCodeAt(i);
-      let mayusAsciiDecTransform = (mayusAsciiDec + 65 - offset) % 26 + 65;
-      let transformedDecString = String.fromCharCode(mayusAsciiDecTransform);
-      nuevoDescifrado += transformedDecString;
+    for (let i = 0; i < userStr.length; i++) {
+      let originalAscii = userStr.charCodeAt(i);
+      if (originalAscii >= 32 && originalAscii <= 64) {
+        let characteres = String.fromCharCode(originalAscii); //Obtiene el código ascii 
+        nuevoDescifrado += characteres;
+      } else if (originalAscii >= 65 && originalAscii <= 90) {
+        let capitalLetter = (originalAscii + 65 - offset) % 26 + 65;
+        let capitalReturn = String.fromCharCode(capitalLetter);
+        nuevoDescifrado += capitalReturn;
+      } else if (originalAscii >= 97 && originalAscii <= 122) {
+        let lowerLetter = (originalAscii + 97 + offset) % 26 + 97;
+        let lowerReturn = String.fromCharCode(lowerLetter);
+        nuevoDescifrado += lowerReturn;
+      }
     }
     return nuevoDescifrado;
   },

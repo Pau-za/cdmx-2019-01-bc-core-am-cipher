@@ -30,6 +30,7 @@ Para esta fase, decidí ocultar la información de la página de inicio, y poner
 
 Para conocer la experiencia de las usuarias en esta fase, decidí realizar un formulario de Google, y envié la liga (que contenía la liga de mi página) a mis contactos mujeres, esta vez no solo me enfoqué en mi círculo cercano, sino en una gran parte de las mujeres que conozco.
 
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Cifrado César
 
