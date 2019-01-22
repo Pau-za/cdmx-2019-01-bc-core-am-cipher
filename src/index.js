@@ -69,7 +69,7 @@ document.getElementById('toCode').addEventListener('click', () => {
   let offset = document.getElementById('offsetEncode').value;
   offset = Number(offset);
   let userString = document.getElementById('inputOffset').value;
-  let result = window.cipher.encode(offset, userString);
+  let result = window.cipher.encode(offset, userString); //usamos dotnotation para llamar a la función porque es un key del objeto cipher 
   return document.getElementById('result').innerHTML = 'Tu mensaje cifrado es "' + result + '", con un desplazamiento de ' + offset + ' lugares.';
 })
 
