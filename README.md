@@ -49,9 +49,11 @@ El cuestionario fue contestado por 16 mujeres, y las respuestas que obtuve fuero
   - Hubo errores en la decodificación del texto que previamente había sido codificado.
 - El 50% de las usuarias respondió que utilizaría una aplicación con el enfoque de **OLSW**, y el 50% respondió que tal vez la utilizaría.
 
-![Respuesta-2]()
+![Respuesta-2](https://github.com/Pau-za/cdmx-2019-01-bc-core-am-cipher/blob/master/src/images/Respuesta2.PNG)
 
-![Respuesta-5]()
+![Respuesta-5](https://github.com/Pau-za/cdmx-2019-01-bc-core-am-cipher/blob/master/src/images/Respuesta5.PNG)
+
+Con base en los comentarios recibidos modifiqué la tipografía. Elegí colores más claros. Aumenté el tamaño de fuente. Decidí poner el mensaje que explica qué hacer con el mensaje resultante de codificar, a la parte donde la usuaria elige **codificar mensaje**.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
