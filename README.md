@@ -2,40 +2,57 @@
 
 ## ¿Quiénes son?
 
-OLSW es una página de cifrado y descifrado de mensajes que va dirigida a mujeres. Durante el 2018, en México se cometieron, en promedio, nueve feminicidios cada 24 h, y el 60% de las mujeres había vivido alguna situación de violencia, de acuerdo a la [Organización de las Naciones Unidas, ONU](https://www.efe.com/efe/america/sociedad/asesinan-a-nueve-mujeres-cada-dia-en-mexico-denuncia-la-onu/20000013-3821244#). El [feminicidio](https://www.gob.mx/conavim/articulos/que-es-el-feminicidio-y-como-identificarlo?idiom=es) es la forma más extrema de violencia contra las mujeres, pero no es la única, existen otras, como la violencia sexual en el espacio urbano.
+**OLSW** es una página de cifrado y descifrado de mensajes que va dirigida a mujeres. El nombre **OLSW** se obtuvo de cifrar con un desplazamiento de siete lugares, con base en el [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar), la palabra **HELP**, que significa **AYUDA** en inglés. Este es el propósito de la página, ayudar a las mujeres.
+
+Durante el 2018, en México se cometieron, en promedio, nueve feminicidios cada 24 h, y el 60% de las mujeres había vivido alguna situación de violencia, de acuerdo a la [Organización de las Naciones Unidas, ONU](https://www.efe.com/efe/america/sociedad/asesinan-a-nueve-mujeres-cada-dia-en-mexico-denuncia-la-onu/20000013-3821244#). El [feminicidio](https://www.gob.mx/conavim/articulos/que-es-el-feminicidio-y-como-identificarlo?idiom=es) es la forma más extrema de violencia contra las mujeres, pero no es la única, existen otras, como la violencia sexual en el espacio urbano.
 
 En la [ENDIREH](http://www2.unwomen.org/-/media/field%20office%20mexico/documentos/publicaciones/2017/ciudades%20y%20espacios%20p%C3%BAblicos%20seguros.pdf?la=es&vs=330) del 2017 se reportó una prevalencia de la violencia sexual hacia las mujeres en el espacio urbano en la Ciudad de México del 50%, cuando a nivel Nacional, fueron 32 mujeres por cada 100 quienes reportaron haber vivido dicho tipo de violencia. Las prácticas violentas más recurrentes fueron: 
 - el acoso callejero: frases ofensivas de carácter sexual que molestan y ofenden a las mujeres (73.7%),
 - los tocamientos impropios (58.2%),
 - y el 14% de las mujeres sintieron miedo de ser atacadas sexualmente.
 
-![ENDIREH-2017]()
+![ENDIREH-2017](https://github.com/Pau-za/cdmx-2019-01-bc-core-am-cipher/blob/master/src/images/ENDIREH%202017.PNG)
 
 La ONU, en su publicación sobre [La violencia feminicida en México](http://www2.unwomen.org/-/media/field%20office%20mexico/documentos/publicaciones/2017/10/violenciafeminicidamx%2007dic%20web.pdf?la=es&vs=5302) reconoce la impunidad que acompaña a los actos de violencia contra las mujeres en México, y esto se traduce en la sistematización de dicha violencia. Por lo tanto, las mujeres se han visto obligadas a buscar estrategias alternativas para generar espacios seguros. En este sentido, una herramienta muy importante ha sido la internet. Recientemente ha surgido una gran variedad de [plataformas digitales](https://www.eltiempo.com/tecnosfera/novedades-tecnologia/iniciativas-digitales-para-enfrentar-la-violencia-de-genero-155522) con el objetivo común de aportar a la seguridad en los espacios públicos, privados y personales, de las mujeres.
 
-Bajo las condiciones actuales de violencia hacia las mujeres, **OLSW** surge como una opción para enviar mensajes seguros, ya que se cifran mediante el método de [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar). De esta manera  pueden enviar un mensaje a una o más personas de su confianza, asegurándose de que terceras personas no accedan a su contenido. Dichos mensajes pueden ser utilizados para pedir auxilio, o alertar sobre algún peligro potencial. Asimismo, **OLSW** provee la función de descifrar cualquier mensaje que se haya cifrado en la misma página. Únicamente el o la usuaria tendrá que asegurarse de insertar el mismo número de desplazamiento que se utilizó originalmente para cifrar el mensaje. Toda esta información se entrega a la usuaria al momento de mostrar el mensaje cifrado o descifrado.
+Bajo las condiciones actuales de violencia hacia las mujeres, **OLSW** surge como una opción para enviar mensajes seguros, ya que se cifran mediante el método de Cifrado César. De esta manera  pueden enviar un mensaje a una o más personas de su confianza, asegurándose de que terceras personas no accedan a su contenido. Dichos mensajes pueden ser utilizados para pedir auxilio, o alertar sobre algún peligro potencial. Asimismo, **OLSW** provee la función de descifrar cualquier mensaje que se haya cifrado en la misma página. Únicamente el o la usuaria tendrá que asegurarse de insertar el mismo número de desplazamiento que se utilizó originalmente para cifrar el mensaje. Toda esta información se entrega a la usuaria al momento de mostrar el mensaje cifrado o descifrado.
 
 # Proceso y decisiones del Diseño de OLSW
 
-## Primera Fase
+## Primer sprint
 Mi primer boceto del diseño lo dibujé, y utilicé Marvel para mostrar la forma en que el usuario navegaría por mi página. Este prototipo lo probé con seis usuarias potenciales. En este primer momento de las pruebas, no hubo comentarios que me indicaran que debía de hacerle cambios a la navegación de la página. Sin embargo, me di cuenta de que tenía que dar una explicación clara sobre el objetivo de la página, por lo que decidí incluir instrucciones dentro de la página.
 
-## Segunda Fase
-Para la segunda fase hice la página utilizando elementos del DOM para comunicar el mensaje que introdujera la usuaria con las funciones de codificado y decodificado de los mensajes. Inicialmente la página comenzaba con un texto que explicaba la existencia de **OLSW**, y ejemplos de situaciones en que las usuarias podían hacer uso de la misma. De ahí las usuarias podían indagar más sobre el Cifrado César mediante un botón que desplegaba otro texto corto, para comprender mejor la forma en que trabajaba la página. Posteriormente las usuarias podían regresar a la página principal y elegir comenzar  con la aplicación. En seguida aparecían tres botones con las opciones de: Codificar, Decodificar, Volver al Inicio. Y hasta ese momento las usuarias podían codificar o decodificar sus mensajes. 
+A continuación, hice la página utilizando elementos del DOM para comunicar el mensaje que introdujera la usuaria con las funciones de codificado y decodificado de los mensajes. Inicialmente la página comenzaba con un texto que explicaba la existencia de **OLSW**, y ejemplos de situaciones en que las usuarias podían hacer uso de la misma. De ahí las usuarias podían indagar más sobre el Cifrado César mediante un botón que desplegaba otro texto corto, para comprender mejor la forma en que trabajaba la página. Posteriormente las usuarias podían regresar a la página principal y elegir comenzar  con la aplicación. En seguida aparecían tres botones con las opciones de: Codificar, Decodificar, Volver al Inicio. Y hasta ese momento las usuarias podían codificar o decodificar sus mensajes. 
 
 Para evaluar la experiencia de usuario durante esta fase envié la liga de mi página a mis seis encuestadas desde la fase anterior. Esta vez recibí comentarios distintos que ayudaron a enriquecer el proyecto: 
 - El texto el inicio de la página entorpecía la navegación en la página, y en caso de emergencia no sería muy útil.
 - A todas les pareció una página muy interesante, que sí utilizarían.
-- A una le pareció que el nombre del producto no le decía nada y por ello no le llamaría la atención si lo viera en el mercado.
-- Dos informaron que el proyecto cobraría más funcionalidad y agilidad si tuviera un botón que enviara a la página de whatsapp, o facebook para enviar el mensaje en ese momento.
+- El proyecto cobraría más funcionalidad y agilidad si tuviera un botón que enviara a la página de whatsapp, o facebook para enviar el mensaje en ese momento.
 - La mayoría comentó que no era muy intuitivo el qué hacer con el mensaje codificado.
 
 Con base en dichas observaciones y comentarios fue que decidí realizar los siguientes cambios para ser probados en la siguiente fase.
 
-## Tercera fase
-Para esta fase, decidí ocultar la información de la página de inicio, y poner únicamente tres botones, uno que permitiera acceder a la información sobre OLSW y el Cifrado César. Igualemente agregué una imagen que indicara que el producto es para cualquier mujer, y que es muy importante que exista sororidad entre nosotras. Con base en dicha imagen elegí la paleta de colores para la página. Y los otros dos botones eran para que las usuarias decidieran entre Codificar y Decodificar su mensaje, y en adelante no fue necesario hacer muchos cambios en la navegación. Finalmente, agregué una leyenda que indicara, una vez que apareciera el texto codificado, que este debía ser enviado a los contactos de confianza de la usuaria.
+## Segundo sprint
+Para esta fase, decidí ocultar la información de la página de inicio, y poner únicamente tres botones, uno que permitiera acceder a la información sobre **OLSW** y el Cifrado César, y los otros dos botones para que las usuarias decidieran entre **Codificar** y **Decodificar** su mensaje. También agregué una imagen que indicara que el producto va dirigido a todas las mujeres, y que es muy importante que exista [sororidad](https://es.wikipedia.org/wiki/Sororidad) entre nosotras. Con base en dicha imagen elegí la paleta de colores para la página. Finalmente, agregué una leyenda que indicara, una vez que apareciera el texto codificado, que este debía ser enviado a los contactos de confianza de la usuaria.
 
-Para conocer la experiencia de las usuarias en esta fase, decidí realizar un formulario de Google, y envié la liga (que contenía la liga de mi página) a mis contactos mujeres, esta vez no solo me enfoqué en mi círculo cercano, sino en una gran parte de las mujeres que conozco.
+Para conocer la experiencia de las usuarias en esta fase, decidí realizar un [formulario de Google](https://docs.google.com/forms/d/e/1FAIpQLSdp8lk4utX8fixKJ6-TudDjKHjFDI1YvQPENmoj2-sNQ16fBg/viewform), y envié la liga (que contenía la liga de mi página) a mis contactos mujeres, esta vez no solo me enfoqué en mi círculo cercano, sino en una gran parte de las mujeres que conozco.
+
+El cuestionario fue contestado por 16 mujeres, y las respuestas que obtuve fueron las siguientes:
+- El 100% de las usuarias comprendieron el objetivo de la página.
+- Al 56.3% de las usuarias les pareció intuitiva la navegación a través de la página, al 31.3% le pareció que algunas cosas fueron sencillas e intuitivas y otras fueron confusas, y solo al 6.3% le pareció confusa.
+- Algunas de las sugerencias que hicieron para que la página mejorara fueron: 
+  - Simplificar la tipografía.
+  - Usar colores más claros.
+  - Utilizar menos letra y poner más imágenes.
+  - Hacer una opción para que el mensaje se pueda enviar por whatsapp directamente desde la página.
+  - Hacer que el mensaje que escribe el usuario se pueda ver junto con el mensaje codificado/decodificado.
+  - Hubo errores en la decodificación del texto que previamente había sido codificado.
+- El 50% de las usuarias respondió que utilizaría una aplicación con el enfoque de **OLSW**, y el 50% respondió que tal vez la utilizaría.
+
+![Respuesta-2]()
+
+![Respuesta-5]()
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
