@@ -1,5 +1,5 @@
 * {
-  margin: 0 auto;
+  margin: 0%;
 }
 
 #root {
@@ -8,11 +8,12 @@
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  background-color: #9bc4b8;
+  background-color: #9DB6C0;
   height: 100%;
 }
 
-#image, #img {
+#image,
+#img {
   width: 100%;
 }
 
@@ -21,13 +22,25 @@ h1 {
   color: #010102;
   height: 5%;
   padding: 1%;
-  margin: 0;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+  padding-bottom: 0.5%;
+  text-align: center;
 }
 
 h1,
 .olsw {
   font-family: 'Coiny', sans-serif;
+  
+}
 
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+  color: #09030c;
+  height: 3%;
+  padding: 1%;
+  margin-bottom: 2%;
 }
 
 body {
@@ -49,45 +62,59 @@ body {
   display: none;
 }
 
+#basicExpl, #cifCes {
+  text-align: justify;
+  margin: 3%;
+  font-size: 1em;
+}
+
 .boton {
   padding: 2%;
   font-weight: 600;
   font-size: 1.5em;
   color: #030608;
-  background-color: #be6a52;
-  border-color: #be6a52;
+  background-color: #BD8580;
+  border-color: #BD8580;
   border-radius: 2%;
   margin: 2%;
+  text-align: center;
 }
 
 .boton:hover {
-  color: #e2e5e7;
-  background-color: #473928;
-  border-color: #473928;
+  color: #030608;
+  background-color: #F1C9B8;
+  border-color: #F1C9B8;
 }
 
 #offsetEncode,
 #offsetDecode {
-  width: 50px;
+  width: 5%;
+  height: 2%;
 }
 
 .toDecode,
 .toCode {
   vertical-align: middle;
-  margin: 10px;
+  margin: 2%;
 }
 
 #result {
-  padding: 10px 10px 10px 10px;
-  border-radius: 10px;
-  border: 5px dotted #39263f;
+  padding: 2%;
+  border-radius: 2%;
   float: none;
   margin-left: 30%;
   margin-right: 30%;
-  background-color: #ab6cbe;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  background-color: #C68166;
   color: #030608;
-  font-size: 30px;
-  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#resultMessage {
+  margin: 2%;
+  font-size: 1.5em;
 }
 
 .icon-arrow-repeat-outline:before {
