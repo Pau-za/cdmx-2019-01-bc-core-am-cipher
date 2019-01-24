@@ -1,33 +1,46 @@
-(parte técnica)
+
 #Cipher: OLSW
 
-(Descripción del proyecto)
+OLSW es una página que cifra y descifra mensajes utilizando el método de [Cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar).
 
-## Comenzando
-
-
-## Pre-requisitos
-
-
-## Instalación
-
+## Todo lo que necestias para comenzar y pre-requisitos
+Para poder trabajar con este repositorio debes:
+1. Asegúrate de tener un memo editor de texto en condiciones (Atom, Visual Code, Sublime Text o cualquier otro de tu preferencia).
+2. Para ejecutar los comandos necesitas una shell UNIX Shell (que es un programita que interpreta líneas de comando (command-line interpreter)), así como tener git instalado. Si usas un sistema operativo "UNIX-like" (como GNU/Linux o MacOS), ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar [Git bash](https://gitforwindows.org/).
+3. Haz tu propio fork_and_knife fork de este repositorio de tu cohort.
+4. Clona tu fork a tu computadora (copia local).
+5. Instala las dependencias del proyecto utilizando el comando npm install en la terminal (Git bash). Esto asume que has instalado Node.js (que incluye npm).
+6. Si todo ha ido bien, deberías poder ejecutar las traffic_light pruebas unitarias (unit tests) con el comando npm run test.
+¡Estás ist@ para comenzar a trabajar! 
 
 ## Ejecutando las pruebas
-(Cuáles son las pruebas)
+Este proyecto contiene una carpeta llamada "test", donde se encuentran los doscumentos necesarios para realizar las siguientes pruebas:
+- Cipher debe ser un objeto
+- encode debe de ser una función
+Para la función encode:
+- Al ingresar: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", con un desplazamiento o(offset) de 33, debe retornar: "HIJKLMNOPQRSTUVWXYZABCDEFG".
+- Al ingresar: "abcdefghijklmnopqrstuvwxyz", con un offset de 33, debe retornar "hijklmnopqrstuvwxyzabcdefg".
+- Al ingresar: " !@", con un offset de 33, debe retornar: " !@".
+Para la función decode:
+- Al ingresar: "HIJKLMNOPQRSTUVWXYZABCDEFG", con un desplazamiento o(offset) de 33, debe retornar: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".
+- Al ingresar: "hijklmnopqrstuvwxyzabcdefg", con un offset de 33, debe retornar "abcdefghijklmnopqrstuvwxyz".
+- Al ingresar: " !@", con un offset de 33, debe retornar: " !@".
 
-### Analice las pruebas end-to-end
-(Importancia de las pruebas)
+Dichas pruebas se utilizan para evaluar que la función que escribas realmente ejecute lo que se necesita para codificar o decodificar un texto.
 
 ### Pruebas de estilo de codificación
-(Qué verifican las pruebas de estilos y por qué)
-
-
-## Deployment
-Agrega notas adicionales sobre cómo hacer deploy
+Además de las pruebas que verifican que nuestras funciones hagan lo que queremos, este repositorio contiene pruebas que evalúan el estilo en que se escribe el código de JavaScript, HTML, CSS, y las mismas pruebas. Dicho estilo está basado en:
+- chai
+- eslint
+- HTML hint
+- package.json
+- mocha
 
 ## Construído con
-Menciona las herramientas que utilizaste para crear el proyecto
-- librerías y sus links
+Las librerías y páginas externas utilizadas para la creación de este proyecto fueron las siguientes:
+- [IcoMoon](https://icomoon.io/)
+- [GoogleFonts](https://fonts.google.com/)
+- AdobeColor
 
 ## Contribuyendo
 Por favor lee el bla bla para detalles de nuestro código de conducta.
@@ -44,7 +57,7 @@ Licencia de...bla
 ## Expresiones de Gratitud
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Usuarios de OLSW
 
@@ -106,7 +119,9 @@ Para leer más sobre la información obtenida de las encuestas da click [aquí](
 
 Con base en los comentarios recibidos modifiqué la tipografía. Elegí colores más claros. Aumenté el tamaño de fuente. Decidí poner el mensaje que explica qué hacer con el mensaje resultante de codificar, a la parte donde la usuaria elige **codificar mensaje**.
 
-Y el resultado final lo puedes revisar en esta [liga](https://pau-za.github.io/cdmx-2019-01-bc-core-am-cipher/src/).
+El resultado final lo puedes revisar en esta [liga](https://pau-za.github.io/cdmx-2019-01-bc-core-am-cipher/src/).
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
