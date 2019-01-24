@@ -1,3 +1,51 @@
+(parte técnica)
+#Cipher: OLSW
+
+(Descripción del proyecto)
+
+## Comenzando
+
+
+## Pre-requisitos
+
+
+## Instalación
+
+
+## Ejecutando las pruebas
+(Cuáles son las pruebas)
+
+### Analice las pruebas end-to-end
+(Importancia de las pruebas)
+
+### Pruebas de estilo de codificación
+(Qué verifican las pruebas de estilos y por qué)
+
+
+## Deployment
+Agrega notas adicionales sobre cómo hacer deploy
+
+## Construído con
+Menciona las herramientas que utilizaste para crear el proyecto
+- librerías y sus links
+
+## Contribuyendo
+Por favor lee el bla bla para detalles de nuestro código de conducta.
+
+## Versionado
+Versión en la que vamos y los cambios que llevan
+
+## Autores
+Contribuidores
+
+## Licencia
+Licencia de...bla
+
+## Expresiones de Gratitud
+
+
+
+
 # Usuarios de OLSW
 
 ## ¿Quiénes son?
@@ -20,9 +68,11 @@ Bajo las condiciones actuales de violencia hacia las mujeres, **OLSW** surge com
 # Proceso y decisiones del Diseño de OLSW
 
 ## Primer sprint
-Mi primer boceto del diseño lo dibujé, y utilicé Marvel para mostrar la forma en que el usuario navegaría por mi página. Este prototipo lo probé con seis usuarias potenciales. En este primer momento de las pruebas, no hubo comentarios que me indicaran que debía de hacerle cambios a la navegación de la página. Sin embargo, me di cuenta de que tenía que dar una explicación clara sobre el objetivo de la página, por lo que decidí incluir instrucciones dentro de la página.
+Mi primer boceto del diseño lo dibujé, y utilicé Marvel para mostrar la forma en que el usuario navegaría por mi [página](https://marvelapp.com/ahhjf67/screen/52722615). Este prototipo lo probé con seis usuarias potenciales. En este primer momento de las pruebas, no hubo comentarios que me indicaran que debía de hacerle cambios a la navegación de la página. Sin embargo, me di cuenta de que tenía que dar una explicación clara sobre el objetivo de la página, por lo que decidí incluir instrucciones dentro de la página.
 
 A continuación, hice la página utilizando elementos del DOM para comunicar el mensaje que introdujera la usuaria con las funciones de codificado y decodificado de los mensajes. Inicialmente la página comenzaba con un texto que explicaba la existencia de **OLSW**, y ejemplos de situaciones en que las usuarias podían hacer uso de la misma. De ahí las usuarias podían indagar más sobre el Cifrado César mediante un botón que desplegaba otro texto corto, para comprender mejor la forma en que trabajaba la página. Posteriormente las usuarias podían regresar a la página principal y elegir comenzar  con la aplicación. En seguida aparecían tres botones con las opciones de: Codificar, Decodificar, Volver al Inicio. Y hasta ese momento las usuarias podían codificar o decodificar sus mensajes. 
+
+![Version-1]()
 
 Para evaluar la experiencia de usuario durante esta fase envié la liga de mi página a mis seis encuestadas desde la fase anterior. Esta vez recibí comentarios distintos que ayudaron a enriquecer el proyecto: 
 - El texto el inicio de la página entorpecía la navegación en la página, y en caso de emergencia no sería muy útil.
@@ -35,11 +85,12 @@ Con base en dichas observaciones y comentarios fue que decidí realizar los sigu
 ## Segundo sprint
 Para esta fase, decidí ocultar la información de la página de inicio, y poner únicamente tres botones, uno que permitiera acceder a la información sobre **OLSW** y el Cifrado César, y los otros dos botones para que las usuarias decidieran entre **Codificar** y **Decodificar** su mensaje. También agregué una imagen que indicara que el producto va dirigido a todas las mujeres, y que es muy importante que exista [sororidad](https://es.wikipedia.org/wiki/Sororidad) entre nosotras. Con base en dicha imagen elegí la paleta de colores para la página. Finalmente, agregué una leyenda que indicara, una vez que apareciera el texto codificado, que este debía ser enviado a los contactos de confianza de la usuaria.
 
+![versión-2]()
+
 Para conocer la experiencia de las usuarias en esta fase, decidí realizar un [formulario de Google](https://docs.google.com/forms/d/e/1FAIpQLSdp8lk4utX8fixKJ6-TudDjKHjFDI1YvQPENmoj2-sNQ16fBg/viewform), y envié la liga (que contenía la liga de mi página) a mis contactos mujeres, esta vez no solo me enfoqué en mi círculo cercano, sino en una gran parte de las mujeres que conozco.
 
 El cuestionario fue contestado por 16 mujeres, y las respuestas que obtuve fueron las siguientes:
 - El 100% de las usuarias comprendieron el objetivo de la página.
-- Al 56.3% de las usuarias les pareció intuitiva la navegación a través de la página, al 31.3% le pareció que algunas cosas fueron sencillas e intuitivas y otras fueron confusas, y solo al 6.3% le pareció confusa.
 - Algunas de las sugerencias que hicieron para que la página mejorara fueron: 
   - Simplificar la tipografía.
   - Usar colores más claros.
@@ -47,7 +98,7 @@ El cuestionario fue contestado por 16 mujeres, y las respuestas que obtuve fuero
   - Hacer una opción para que el mensaje se pueda enviar por whatsapp directamente desde la página.
   - Hacer que el mensaje que escribe el usuario se pueda ver junto con el mensaje codificado/decodificado.
   - Hubo errores en la decodificación del texto que previamente había sido codificado.
-- El 50% de las usuarias respondió que utilizaría una aplicación con el enfoque de **OLSW**, y el 50% respondió que tal vez la utilizaría.
+Para leer más sobre la información obtenida de las encuestas da click [aquí](https://docs.google.com/spreadsheets/d/1m0YcfCcbzBLmkIWovkZfNgOwUWduIxvvsuLZAmyyAAA/edit?usp=sharing).
 
 ![Respuesta-2](https://github.com/Pau-za/cdmx-2019-01-bc-core-am-cipher/blob/master/src/images/Respuesta2.PNG)
 
@@ -55,6 +106,9 @@ El cuestionario fue contestado por 16 mujeres, y las respuestas que obtuve fuero
 
 Con base en los comentarios recibidos modifiqué la tipografía. Elegí colores más claros. Aumenté el tamaño de fuente. Decidí poner el mensaje que explica qué hacer con el mensaje resultante de codificar, a la parte donde la usuaria elige **codificar mensaje**.
 
+Y el resultado final fue el siguiente:
+
+![]()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
