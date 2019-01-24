@@ -38,23 +38,29 @@ Además de las pruebas que verifican que nuestras funciones hagan lo que queremo
 
 ## Construído con
 Las librerías y páginas externas utilizadas para la creación de este proyecto fueron las siguientes:
+- Vanilla JavaScript
+- HTML 5
+- CSS 3
 - [IcoMoon](https://icomoon.io/)
 - [GoogleFonts](https://fonts.google.com/)
-- AdobeColor
+- [Adobe Color](https://color.adobe.com/es/create/color-wheel/)
+- [FreePik](https://www.freepik.es/)
 
 ## Contribuyendo
-Por favor lee el bla bla para detalles de nuestro código de conducta.
-
-## Versionado
-Versión en la que vamos y los cambios que llevan
+En caso de requerir una contribución a este proyecto, favor de escribirle a los autores.
 
 ## Autores
-Contribuidores
-
-## Licencia
-Licencia de...bla
+- [Diego Velez](https://github.com/diegovelezg)
+- [Silvana Suarez](https://github.com/shirley-startary)
+- [Lupo Montero](https://github.com/lupomontero)
+- [Jonhks](https://github.com/Jonhks)
+- [Loúrdes Vilchez](https://github.com/developerVilchez)
+- [Gonzalo Parra](https://github.com/gaposx)
+- [Paulina Zedillo](https://github.com/Pau-za)
 
 ## Expresiones de Gratitud
+Agradezco enormemente a mis compañeras Elsy, Gaby, Lorena, Fabiola, Diana, Elenor, y Ely por haberme escuchado, ayudado, dado ánimos, y distraerme siempre que lo necesité. Gracias a ustedes no morí en el intento durante este proceso, y siempre sentí que, aunque no estuviera logrando algo, era temporal, porque entre todas encontraríamos una solución. ¡Gracias, totales! <3
+
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
