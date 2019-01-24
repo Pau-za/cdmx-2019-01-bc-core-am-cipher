@@ -72,7 +72,7 @@ Mi primer boceto del diseño lo dibujé, y utilicé Marvel para mostrar la forma
 
 A continuación, hice la página utilizando elementos del DOM para comunicar el mensaje que introdujera la usuaria con las funciones de codificado y decodificado de los mensajes. Inicialmente la página comenzaba con un texto que explicaba la existencia de **OLSW**, y ejemplos de situaciones en que las usuarias podían hacer uso de la misma. De ahí las usuarias podían indagar más sobre el Cifrado César mediante un botón que desplegaba otro texto corto, para comprender mejor la forma en que trabajaba la página. Posteriormente las usuarias podían regresar a la página principal y elegir comenzar  con la aplicación. En seguida aparecían tres botones con las opciones de: Codificar, Decodificar, Volver al Inicio. Y hasta ese momento las usuarias podían codificar o decodificar sus mensajes. 
 
-![Version-1]()
+![Version-1](https://github.com/Pau-za/cdmx-2019-01-bc-core-am-cipher/blob/master/src/images/versi%C3%B3n_texto_OLSW.png)
 
 Para evaluar la experiencia de usuario durante esta fase envié la liga de mi página a mis seis encuestadas desde la fase anterior. Esta vez recibí comentarios distintos que ayudaron a enriquecer el proyecto: 
 - El texto el inicio de la página entorpecía la navegación en la página, y en caso de emergencia no sería muy útil.
@@ -85,7 +85,7 @@ Con base en dichas observaciones y comentarios fue que decidí realizar los sigu
 ## Segundo sprint
 Para esta fase, decidí ocultar la información de la página de inicio, y poner únicamente tres botones, uno que permitiera acceder a la información sobre **OLSW** y el Cifrado César, y los otros dos botones para que las usuarias decidieran entre **Codificar** y **Decodificar** su mensaje. También agregué una imagen que indicara que el producto va dirigido a todas las mujeres, y que es muy importante que exista [sororidad](https://es.wikipedia.org/wiki/Sororidad) entre nosotras. Con base en dicha imagen elegí la paleta de colores para la página. Finalmente, agregué una leyenda que indicara, una vez que apareciera el texto codificado, que este debía ser enviado a los contactos de confianza de la usuaria.
 
-![versión-2]()
+![versión-2](https://github.com/Pau-za/cdmx-2019-01-bc-core-am-cipher/blob/master/src/images/version_dinamica_OLSW.jpg)
 
 Para conocer la experiencia de las usuarias en esta fase, decidí realizar un [formulario de Google](https://docs.google.com/forms/d/e/1FAIpQLSdp8lk4utX8fixKJ6-TudDjKHjFDI1YvQPENmoj2-sNQ16fBg/viewform), y envié la liga (que contenía la liga de mi página) a mis contactos mujeres, esta vez no solo me enfoqué en mi círculo cercano, sino en una gran parte de las mujeres que conozco.
 
@@ -106,9 +106,8 @@ Para leer más sobre la información obtenida de las encuestas da click [aquí](
 
 Con base en los comentarios recibidos modifiqué la tipografía. Elegí colores más claros. Aumenté el tamaño de fuente. Decidí poner el mensaje que explica qué hacer con el mensaje resultante de codificar, a la parte donde la usuaria elige **codificar mensaje**.
 
-Y el resultado final fue el siguiente:
+Y el resultado final lo puedes revisar en esta [liga](https://pau-za.github.io/cdmx-2019-01-bc-core-am-cipher/src/).
 
-![]()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
