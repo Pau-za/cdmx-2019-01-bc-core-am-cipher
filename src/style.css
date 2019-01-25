@@ -70,8 +70,9 @@ body {
 #basicExpl,
 #cifCes {
   text-align: justify;
-  margin: 3%;
-  font-size: 0.8em;
+  margin: 5%;
+  font-size: 1em;
+  margin: 5%;
 }
 
 .boton {
@@ -114,8 +115,9 @@ body {
   margin-top: 3%;
   height: 15%;
   background-color: #C68166;
-  color: #030608;
+  color: #000000;
   font-size: 1.5em;
+  font-weight: 600;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-family: 'Nanum Gothic', sans-serif;
   font-family: 'Comfortaa', cursive;
